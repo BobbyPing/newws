@@ -1,0 +1,116 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.full-height {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    color: white;
+    font-family: 'Lustria', serif;
+    
+}
+
+.title-main {
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,.45);
+}
+
+.top-titles {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.bg-image {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
+    height: 100%;
+}
+
+.s-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.s-inner img{
+    margin-top: -1250px;
+}
+
+.scroll-line {
+    height: 80px;
+    border-left:white dashed 1px;
+    position: relative;
+    left: 50%;
+}
+
+.scroll-line h6 {
+    position: relative;
+    display: inline-block;
+    transform: translateX(-50%) rotate(90deg);
+    top: 78px;
+}
+
+.section2 {
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Lustria', serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;;
+    width: 100%;
+    font-family: 'Lustria', serif;
+    color: white;
+    background-color: #2C3E50; 
+}
+
+
+  
+
+@media (max-width: 768px) {
+
+  .s-inner img{
+      width: 100%;
+      margin-top: -1000px;
+  }
+
+  .title-main h1{
+      font-size: 1.5rem;
+  }
+
+  .scroll-line h6 {
+    position: relative;
+    display: inline-block;
+    transform: translateX(-50%) rotate(-90deg);
+    top: 78px;
+    }
+
+
+}
